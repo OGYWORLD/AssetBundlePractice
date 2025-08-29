@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 public class AB_Load_GHPages_Cache : MonoBehaviour
 {
-    [SerializeField] string bundleUrl = "https://ogyworld.github.io/AssetBundlePractice/mybundle";
+    [SerializeField] string bundleUrl = "https://ogyworld.github.io/AssetBundlePractice/Independency/mybundle";
     [SerializeField] string cacheName = "mybundle";
     [SerializeField] string assetName = "cube";
 
