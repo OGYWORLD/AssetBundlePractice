@@ -8,7 +8,7 @@ public class AB_Load_File_WithDeps_Min : MonoBehaviour
     [SerializeField] string bundlesDirName = "AssetBundles";
 
     [Header("메인 번들 파일명(빌드 결과와 정확히 동일)")]
-    [SerializeField] string mainBundleName = "cube.bundle";
+    [SerializeField] string mainBundleName = "cube";
 
     [Header("메인 번들에서 꺼낼 프리팹 이름")]
     [SerializeField] string assetName = "cube";

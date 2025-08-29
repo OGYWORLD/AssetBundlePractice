@@ -6,7 +6,7 @@ using System.IO;
 public static class AB_Build_WithDeps_Simple
 { 
     // 메뉴: Tools/AB/Build (Split with Deps)
-[MenuItem("Tools/Build (Dependency)")]
+[MenuItem("Tools/Build AssetBundles (Dependency)")]
 static void BuildSplitWithDeps()
 {
     // 1) 프로젝트 에셋 경로(반드시 "Assets/..." 풀 경로)
@@ -37,7 +37,7 @@ static void BuildSplitWithDeps()
     var builds = new[] { texBundle, matBundle, prefabBundle };
 
     // 3) 출력 폴더 — 네 샘플에 맞춰 "AssetBundles" 루트 사용
-    var outDir = "AssetBundles";
+    var outDir = "AssetBundles/dependency";
     if (!Directory.Exists(outDir)) Directory.CreateDirectory(outDir);
 
     // 4) 빌드 옵션 — 네 샘플과 동일하게 LZ4(ChunkBasedCompression)만 사용해도 OK

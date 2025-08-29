@@ -7,7 +7,7 @@ public class AB_Load_GHPages_Cache : MonoBehaviour
 {
     [SerializeField] string bundleUrl = "https://ogyworld.github.io/AssetBundlePractice/Independency/mybundle";
     [SerializeField] string cacheName = "mybundle";
-    [SerializeField] string assetName = "cube";
+    [SerializeField] string assetName = "WhiteCube";
 
     IEnumerator Start()
     {

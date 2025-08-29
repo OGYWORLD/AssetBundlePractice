@@ -8,7 +8,7 @@ public class AB_Load_File_Min : MonoBehaviour
         // 1) 번들 파일 경로 (에디터/PC 기준)
         //    project/Assets/../AssetBundles/mybundle 로 풀어서 절대경로로 만듦
         string bundlePath = Path.GetFullPath(
-            Path.Combine(Application.dataPath, "../AssetBundles/mybundle")
+            Path.Combine(Application.dataPath, "../AssetBundles/Independency/mybundle")
         );
 
         // 2) 번들 열기
@@ -28,11 +28,11 @@ public class AB_Load_File_Min : MonoBehaviour
         GameObject prefab = null;
 
         // (A) addressableNames를 빌드 때 줬다면 이 이름으로도 로드 가능 (안 줬다면 실패해도 정상)
-        prefab = bundle.LoadAsset<GameObject>("cube");
+        prefab = bundle.LoadAsset<GameObject>("WhiteCube");
 
         // (B) 번들 내부의 실제 저장 이름(소문자 + 풀경로)로도 시도
         if (prefab == null)
-            prefab = bundle.LoadAsset<GameObject>("assets/prefabs/cube.prefab");
+            prefab = bundle.LoadAsset<GameObject>("assets/prefabs/WhiteCube.prefab");
 
         if (prefab == null)
         {
