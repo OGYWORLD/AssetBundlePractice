@@ -22,4 +22,4 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Materials/UnityMaterial.mat
 Dependencies:
-- /Users/ogy1004/Desktop/AssetBundlePractice/AssetBundles/tex
+- /Users/ogy1004/Desktop/AssetBundlePractice/AssetBundles/dependency/tex

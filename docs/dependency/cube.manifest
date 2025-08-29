@@ -30,4 +30,4 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Prefabs/Cube.prefab
 Dependencies:
-- /Users/ogy1004/Desktop/AssetBundlePractice/AssetBundles/mat
+- /Users/ogy1004/Desktop/AssetBundlePractice/AssetBundles/dependency/mat
