@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class AB_Load_File_WithDeps_Min : MonoBehaviour
 {
     [Header("번들 루트 폴더(프로젝트 루트 기준)")]
-    [SerializeField] string bundlesDirName = "AssetBundles";
+    [SerializeField] string bundlesDirName = "AssetBundles/dependency";
 
     [Header("메인 번들 파일명(빌드 결과와 정확히 동일)")]
     [SerializeField] string mainBundleName = "cube";
@@ -14,7 +14,7 @@ public class AB_Load_File_WithDeps_Min : MonoBehaviour
     [SerializeField] string assetName = "cube";
 
     [Header("글로벌 매니페스트 파일명(비워두면 자동 추정)")]
-    [SerializeField] string manifestFileName = ""; // 예: StandaloneWindows64 / StandaloneOSX
+    [SerializeField] string manifestFileName = ""; // 비워두면 추정 시도
 
 void Start()
 {
@@ -30,7 +30,7 @@ void Start()
     var manifestName = string.IsNullOrEmpty(manifestFileName) ? GuessManifestName(root) : manifestFileName;
     if (string.IsNullOrEmpty(manifestName))
     {
-        Debug.LogError("글로벌 매니페스트 파일명을 찾지 못했어요. 인스펙터에 직접 넣어줘.");
+        Debug.LogError("글로벌 매니페스트 파일명을 찾지 못했어요. 인스펙터에 직접 넣어주세요.");
         return;
     }
     var manifestBundle = AssetBundle.LoadFromFile(Path.Combine(root, manifestName));
